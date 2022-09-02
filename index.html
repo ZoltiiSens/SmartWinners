@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+
+		<!-- ----- FONTS ----- -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- ----- STYLES ----- -->
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.2.0/css/all.min.css" integrity="sha512-6c4nX2tn5KbzeBJo9Ywpa0Gkt+mzCzJBrE1RB6fmpcsoN+b/w/euwIMuQKNyUoU/nToKN3a8SgNOtPrbW12fug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!-- ----- SCRIPS ----- -->
+		<script src="scripts/app.js" defer></script>
+	</head>
+	<body>
+		<!-- ----- HEADER ----- -->
+		<header>
+			<div class="header__info">
+				<img src="images/logo.png" alt="logo" class="logo" />
+				<div class="account-information">
+					<div class="name">
+						<p>Welcome <span id="user_name">Roma</span> — </p>
+						<button id="logout">Logout</button>
+					</div>
+					<p class="balance">
+						<p>Your balance: <span id="user_balance">P 0,00</span></p>
+					</p>
+				</div>
+			</div>
+			<div class="header__buttons">
+				<div class="icons">
+					<i class="fab fa-facebook-f"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-facebook-messenger"></i>
+					<i class="fab fa-whatsapp"></i>
+					
+				</div>
+				<div class="language-choose">
+					<img src="images/flag.jpg" alt="english" class="language_flag">
+					<p class="language">English</p>
+					<i class="fas fa-chevron-down"></i>
+				</div>
+			</div>
+		</header>
+		<div class="phone-header">
+			<div class="line">
+				<a class="nav">
+					<span></span>
+				</a>
+				<img src="images/logo.png" alt="logo" class="logo" />
+				<div class="user-img">
+					<img src="images/User.svg" alt="user">
+				</div>
+			</div>
+			<div class="line">
+				<div class="name">
+					<p>Welcome <span id="user_name">Roma</span> — </p>
+					<button id="logout">Logout</button>
+				</div>
+				<p class="balance">
+					Your balance: <span id="user_balance">P 0,00</span>
+				</p>
+			</div>
+		</div>
+		<!-- ----- NAVIGATION BAR ----- -->
+		<nav>
+			<a href="#" class="nav__item active"><span>Home</span></a>
+			<a href="#" class="nav__item"><span>Play all lottery</span></a>
+			<a href="#" class="nav__item"><span>Lottery groups</span></a>
+			<a href="#" class="nav__item"><span>Promotions</span></a>
+			<a href="#" class="nav__item"><span>My account</span></a>
+		</nav>
+		<div class="phone-nav">
+			<div class="closer-box">
+				<span class="closer"></span>
+			</div>
+			<a href="#" class="phone-nav__item active"><span>Home</span></a>
+			<a href="#" class="phone-nav__item"><span>Play all lottery</span></a>
+			<a href="#" class="phone-nav__item"><span>Lottery groups</span></a>
+			<a href="#" class="phone-nav__item"><span>Promotions</span></a>
+			<a href="#" class="phone-nav__item"><span>My account</span></a>
+			<div class="phone-nav__socials">
+				<a href="" class="img-container"><img src="images/facebook.svg" alt="facebook"></a>
+				<a href="" class="img-container"><img src="images/twitter.svg" alt="twitter"></a>
+				<a href="" class="img-container"><img src="images/whatsup.svg" alt="whatsup"></a>
+			</div>
+		</div>
+		<!-- ----- MAIN CONTENT ----- -->
+		<main>
+			<!-- BANNER SECTION -->
+			<section class="banner-section">
+				<img src="images/banner.jpg" alt="Banner">
+			</section>
+			<!-- INFORMATION SECTION -->
+			<section class="information-section">
+				<div class="information-section__item">
+					<img src="images/computer.jpg" alt="">
+					<div class="information-section__item__text">
+						<div class="head-line">
+							<h4>you pick</h4>
+							<a href="">Play Now » </a>
+						</div>
+						<p>It’s easy! Pick from over 40 official lottery games you wish to play. Then select your winning numbers.</p>
+					</div>
+				</div>
+				<div class="information-section__item">
+					<img src="images/lotteriesshop.jpg" alt="">
+					<div class="information-section__item__text">
+						<div class="head-line">
+							<h4>we buy</h4>
+							<a href="">More Details »</a>
+						</div>
+						<p>Once you’ve picked your winning numbers we’ll purchase your ticket on your behalf.</p>
+					</div>
+				</div>
+				<div class="information-section__item">
+					<img src="images/money.jpg" alt="">
+					<div class="information-section__item__text">
+						<div class="head-line">
+							<h4>you win!!!</h4>
+							<a href="">Withdraw My Winnings »</a>
+						</div>
+						<p>When you win, we’ll automatically credit your account the full value of your winnings.</p>
+					</div>
+				</div>
+			</section>
+			<!-- BIGGEST UPCOMING LOTTERY DRAWS SECTION -->
+			<section class="upcoming-draws-section">
+				<h3>Biggest upcoming lottery draws</h3>
+				<div class="upcoming-draws-section__events">
+					<div class="event">
+						<div class="event__info-section">
+							<div class="image-box"><img src="images/oz-lotto.jpg" alt="oz-lotto"></div>
+							<div class="text-box">
+								<div class="head-line">
+									<img src="images/flag.jpg" alt="">
+									<h4>Mega Millions</h4>
+								</div>
+								<p>$94 000 000</p>
+							</div>
+						</div>
+						<div class="event__active-section">
+							<a href="" class="play-now">Play now</a>
+							<div class="timer-box"><img src="images/alarm.svg" alt=""><span class="timer">1:22:01</span></div>
+						</div>
+					</div>
+					<div class="event">
+						<div class="event__info-section">
+							<div class="image-box"><img src="images/mega-millions.jpg" class="long_photo" alt="oz-lotto"></div>
+							<div class="text-box">
+								<div class="head-line">
+									<img src="images/flag.jpg" alt="">
+									<h4>Mega Millions</h4>
+								</div>
+								<p>$94 000 000</p>
+							</div>
+						</div>
+						<div class="event__active-section">
+							<a href="" class="play-now">Play now</a>
+							<div class="timer-box"><img src="images/alarm.svg" alt=""><span class="timer">1:22:01</span></div>
+						</div>
+					</div>
+					<div class="event">
+						<div class="event__info-section">
+							<div class="image-box"><img src="images/power.jpg" alt="oz-lotto" ></div>
+							<div class="text-box">
+								<div class="head-line">
+									<img src="images/flag.jpg" alt="">
+									<h4>Mega Millions</h4>
+								</div>
+								<p>$94 000 000</p>
+							</div>
+						</div>
+						<div class="event__active-section">
+							<a href="" class="play-now">Play now</a>
+							<div class="timer-box"><img src="images/alarm.svg" alt=""><span class="timer">1:22:01</span></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- PLAY UPCOMING LOTTERIES ONLINE SECTION -->
+			<section class="upcoming">
+				<h3>Play upcoming lotteries online</h3>
+				<div class="upcoming__parent">
+					<div class="upcoming__children">
+						<i class="fas fa-star"></i>
+						<div class="img-box">
+							<img src="images/mega-millions.jpg" alt="mega millions">
+						</div>
+						<div class="header-line">
+							<img src="images/flag.jpg" alt="">
+							<h4>Mega Millions</h4>
+						</div>
+						<p class="prize">$122 000 000</p>
+						<div class="timer-line">
+							<img src="images/alarmBlue.svg" alt="">
+							<span class="timer">1:22:01</span>
+						</div>
+						<a href="" class="play-now">Play Now</a>
+					</div>
+					<div class="upcoming__children">
+						<i class="fas fa-star"></i>
+						<div class="img-box">
+							<img src="images/mega-millions.jpg" alt="mega millions">
+						</div>
+						<div class="header-line">
+							<img src="images/flag.jpg" alt="">
+							<h4>Mega Millions</h4>
+						</div>
+						<p class="prize">$122 000 000</p>
+						<div class="timer-line">
+							<img src="images/alarmBlue.svg" alt="">
+							<span class="timer">1:22:01</span>
+						</div>
+						<a href="" class="play-now">Play Now</a>
+					</div>
+					<div class="upcoming__children">
+						<i class="fas fa-star"></i>
+						<div class="img-box">
+							<img src="images/mega-millions.jpg" alt="mega millions">
+						</div>
+						<div class="header-line">
+							<img src="images/flag.jpg" alt="">
+							<h4>Mega Millions</h4>
+						</div>
+						<p class="prize">$122 000 000</p>
+						<div class="timer-line">
+							<img src="images/alarmBlue.svg" alt="">
+							<span class="timer">1:22:01</span>
+						</div>
+						<a href="" class="play-now">Play Now</a>
+					</div>
+					<div class="upcoming__children">
+						<i class="fas fa-star"></i>
+						<div class="img-box">
+							<img src="images/mega-millions.jpg" alt="mega millions">
+						</div>
+						<div class="header-line">
+							<img src="images/flag.jpg" alt="">
+							<h4>Mega Millions</h4>
+						</div>
+						<p class="prize">$122 000 000</p>
+						<div class="timer-line">
+							<img src="images/alarmBlue.svg" alt="">
+							<span class="timer">1:22:01</span>
+						</div>
+						<a href="" class="play-now">Play Now</a>
+					</div>
+					<div class="upcoming__children">
+						<i class="fas fa-star"></i>
+						<div class="img-box">
+							<img src="images/mega-millions.jpg" alt="mega millions">
+						</div>
+						<div class="header-line">
+							<img src="images/flag.jpg" alt="">
+							<h4>Mega Millions</h4>
+						</div>
+						<p class="prize">$122 000 000</p>
+						<div class="timer-line">
+							<img src="images/alarmBlue.svg" alt="">
+							<span class="timer">1:22:01</span>
+						</div>
+						<a href="" class="play-now">Play Now</a>
+					</div>
+					<div class="upcoming__children">
+						<i class="fas fa-star"></i>
+						<div class="img-box">
+							<img src="images/mega-millions.jpg" alt="mega millions">
+						</div>
+						<div class="header-line">
+							<img src="images/flag.jpg" alt="">
+							<h4>Mega Millions</h4>
+						</div>
+						<p class="prize">$122 000 000</p>
+						<div class="timer-line">
+							<img src="images/alarmBlue.svg" alt="">
+							<span class="timer">1:22:01</span>
+						</div>
+						<a href="" class="play-now">Play Now</a>
+					</div>
+					<div class="upcoming__children">
+						<i class="fas fa-star"></i>
+						<div class="img-box">
+							<img src="images/mega-millions.jpg" alt="mega millions">
+						</div>
+						<div class="header-line">
+							<img src="images/flag.jpg" alt="">
+							<h4>Mega Millions</h4>
+						</div>
+						<p class="prize">$122 000 000</p>
+						<div class="timer-line">
+							<img src="images/alarmBlue.svg" alt="">
+							<span class="timer">1:22:01</span>
+						</div>
+						<a href="" class="play-now">Play Now</a>
+					</div>
+					<div class="upcoming__children">
+						<i class="fas fa-star"></i>
+						<div class="img-box">
+							<img src="images/mega-millions.jpg" alt="mega millions">
+						</div>
+						<div class="header-line">
+							<img src="images/flag.jpg" alt="">
+							<h4>Mega Millions</h4>
+						</div>
+						<p class="prize">$122 000 000</p>
+						<div class="timer-line">
+							<img src="images/alarmBlue.svg" alt="">
+							<span class="timer">1:22:01</span>
+						</div>
+						<a href="" class="play-now">Play Now</a>
+					</div>
+					<div class="upcoming__children">
+						<i class="fas fa-star"></i>
+						<div class="img-box">
+							<img src="images/mega-millions.jpg" alt="mega millions">
+						</div>
+						<div class="header-line">
+							<img src="images/flag.jpg" alt="">
+							<h4>Mega Millions</h4>
+						</div>
+						<p class="prize">$122 000 000</p>
+						<div class="timer-line">
+							<img src="images/alarmBlue.svg" alt="">
+							<span class="timer">1:22:01</span>
+						</div>
+						<a href="" class="play-now">Play Now</a>
+					</div>
+					<div class="upcoming__children">
+						<i class="fas fa-star"></i>
+						<div class="img-box">
+							<img src="images/mega-millions.jpg" alt="mega millions">
+						</div>
+						<div class="header-line">
+							<img src="images/flag.jpg" alt="">
+							<h4>Mega Millions</h4>
+						</div>
+						<p class="prize">$122 000 000</p>
+						<div class="timer-line">
+							<img src="images/alarmBlue.svg" alt="">
+							<span class="timer">1:22:01</span>
+						</div>
+						<a href="" class="play-now">Play Now</a>
+					</div>
+				</div>
+				<a href="#" class="details">More Details »</a>
+				<a href="#" class="details alllot">All lotteries »</a>
+			</section>
+			<!-- WINNERS SECTION -->
+			<section class="winners">
+				<div class="biggest-winner">
+					<h3>BIGGEST LOTTERY WINNER</h3>
+					<div class="biggest-winner__container">
+						<div class="header-line">
+							<img src="images/lotto.jpg" alt="lotto">
+							<h2>WON <span>€100 000 000</span></h2>
+						</div>
+						<div class="img-column">
+							<img src="images/big-winner.jpg" alt="big-winner">
+							<div class="caption">
+								<p>UK Lotto results:</p>
+								<div class="right-side">
+									<div class="dates">
+										<span>07</span>
+										<span>07</span>
+										<span>07</span>
+										<span>07</span>
+										<span>07</span>
+									</div>
+									<span class="date">Date: 20.11.2021</span>
+								</div>
+							</div>
+						</div>
+						<div class="text-column">
+							<h4>Shaun Vincent a Lottery Winner</h4>
+							<p>Shaun Vincent, from Barnsley, celebrates his £1,158,038 National Lottery win after his cheque presentation at the Cedar Court Hotel, Wakefield.</p>
+							<a href="" class="read-full">Read the full story</a>
+							<a href="" class="play-now">Play Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="latest-winners">
+					<h3>OUR LATEST WINNERS</h3>
+					<div class="latest-winners__container">
+						<div class="total">
+							<p class="caption">Total prizes paid out</p>
+							<p class="total-money">US$ 107 233 768</p>
+							<p class="tickets"><span>6 975 146</span> winning tickets</p>
+						</div>
+						<div class="person-winners">
+							<div class="person-win">
+								<img src="images/winner.jpg" alt="winner" class="img-winner">
+								<div class="text-column">
+									<p class="date">20.11.2021</p>
+									<div class="name-line">
+										<img src="images/german-flagr.jpg" alt="">
+										<p>J.J won  Р175</p>
+									</div>
+									<p class="sub-line">in   7 ИЗ 49   draw  #13476</p>
+								</div>
+							</div>
+							<div class="person-win">
+								<img src="images/winner.jpg" alt="winner" class="img-winner">
+								<div class="text-column">
+									<p class="date">20.11.2021</p>
+									<div class="name-line">
+										<img src="images/german-flagr.jpg" alt="">
+										<p>J.J won  Р175</p>
+									</div>
+									<p class="sub-line">in   7 ИЗ 49   draw  #13476</p>
+								</div>
+							</div>
+							<div class="person-win">
+								<img src="images/winner.jpg" alt="winner" class="img-winner">
+								<div class="text-column">
+									<p class="date">20.11.2021</p>
+									<div class="name-line">
+										<img src="images/german-flagr.jpg" alt="">
+										<p>J.J won  Р175</p>
+									</div>
+									<p class="sub-line">in   7 ИЗ 49   draw  #13476</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<!-- ----- FAQ SECTION ----- -->
+			<section class="faq">
+				<h3>FREQUENTLY ASKED QUESTION (F.A.Q.)</h3>
+				<div class="question">
+					<div class="question-line">
+						<h5>Can I play the lottery online?</h5>
+						<i class="fas fa-angle-down open open-0" onclick="openquestion(0, 0)"></i>
+					</div>
+					<div class="answer answer-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, consectetur ullam quia soluta ipsam dolorum, hic beatae et provident aliquam suscipit illum nostrum, quasi tempore corrupti. Blanditiis vel libero in?
+					Iusto deserunt explicabo, sint velit quos quasi cupiditate voluptates. Assumenda magnam aliquam nesciunt amet iure vero totam iste ipsam eum fuga reprehenderit aut, ipsum quam deleniti corrupti nihil esse nobis.</div>
+				</div>
+				<div class="question">
+					<div class="question-line">
+						<h5>How will I get my wins?</h5>
+						<span><i class="fas fa-angle-down open open-1"></i></span>
+					</div>
+					<div class="answer answer-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, consectetur ullam quia soluta ipsam dolorum, hic beatae et provident aliquam suscipit illum nostrum, quasi tempore corrupti. Blanditiis vel libero in?
+					Iusto deserunt explicabo, sint velit quos quasi cupiditate voluptates. Assumenda magnam aliquam nesciunt amet iure vero totam iste ipsam eum fuga reprehenderit aut, ipsum quam deleniti corrupti nihil esse nobis.</div>
+				</div>
+				<div class="question">
+					<div class="question-line">
+						<h5>Is it safe to play lottery online?</h5>
+						<span><i class="fas fa-angle-down open open-2"></i></span>
+					</div>
+					<div class="answer answer-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, consectetur ullam quia soluta ipsam dolorum, hic beatae et provident aliquam suscipit illum nostrum, quasi tempore corrupti. Blanditiis vel libero in?
+					Iusto deserunt explicabo, sint velit quos quasi cupiditate voluptates. Assumenda magnam aliquam nesciunt amet iure vero totam iste ipsam eum fuga reprehenderit aut, ipsum quam deleniti corrupti nihil esse nobis.</div>
+				</div>
+			</section>
+		</main>
+		<!-- ----- FOOTER ----- -->
+		<img src="images/stars.svg" alt="" class="background-up">
+		<footer>
+				<div class="livechat">
+					<div class="img-container">
+						<img src="images/messanger.svg" alt="">
+					</div>
+					<div class="text-column">
+						<h4>Live chat by WhatsApp</h4>
+						<span>Customer Service</span>
+					</div>
+				</div>
+				<div class="useful-links">
+					<h4>USEFUL LINKS</h4>
+				</div>
+				<div class="useful-links-text-first">
+					<a href="" class="useful-links-text-first__home">Home</a>
+					<a href="">Lottery Results & Winners</a>
+					<a href="">Lottery Promotions</a>
+					<a href="">About Us</a>
+					<a href="">Contact Us</a>
+				</div>
+				<div class="useful-links-text-second">
+					<a href="">Terms & Conditions</a>
+					<a href="">Security</a>
+					<a href="">Privacy Policy</a>
+					<a href="">Acceptable Use Policy</a>
+					<a href="">Website Use Policy</a>
+					<a href="" class="bold">Affiliate program</a>
+				</div>
+				<div class="smartwinners">
+					<h4>SMARTWINNERS</h4>
+				</div>
+				<div class="smartwinners-text">
+					<p>The trade name SmartWinners and all content on this website is  a copyright of SmartWinners Limited. All rights reserved. We are an independent lottery ticket purchasing service. We are not affiliated with nor are we endorsed by any State sanctioned lottery organization. We make no claims on our site to be such. </p>
+					<p>Our registered business address is Unit 6158, PO Box 6945, London, W1A <br> 6US, United Kingdom.</p>
+				</div>
+				<div class="socials">
+					<a href="" class="img-container"><img src="images/facebook.svg" alt="facebook"></a>
+					<a href="" class="img-container"><img src="images/twitter.svg" alt="twitter"></a>
+					<a href="" class="img-container"><img src="images/whatsup.svg" alt="whatsup"></a>
+				</div>
+				<div class="payment-methods">
+					<h4>PAYMENT METHODS</h4>
+				</div>
+				<div class="payment-methods-text">
+					<a href=""><img src="images/visa.jpg" alt=""></a>
+					<a href=""><img src="images/mastercard.jpg" alt=""></a>
+					<a href=""><img src="images/maestro.jpg" alt=""></a>
+					<a href=""><img src="images/dinnersclub.jpg" alt=""></a>
+					<a href=""><img src="images/skrill.jpg" alt=""></a>
+					<a href=""><img src="images/bitcoin.jpg" alt=""></a>
+					<a href=""><img src="images/qiwi.jpg" alt=""></a>
+					<a href=""><img src="images/hsbc.jpg" alt=""></a>
+					<a href=""><img src="images/litecoin.jpg" alt=""></a>
+				</div>
+				<div class="security">
+					<h4>SECURITY & TRUST</h4>
+					<div class="img-line">
+						<a href=""><img src="images/ctv.jpg" alt="ctv"></a>
+						<a href=""><img src="images/comodo.jpg" alt="comodo"></a>
+					</div>
+				</div>
+		</footer>
+	</body>
+</html>
